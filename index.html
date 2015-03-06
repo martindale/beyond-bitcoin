@@ -16,9 +16,29 @@
 
     <link rel="stylesheet" href="css/reveal.css">
     <link rel="stylesheet" href="css/theme/bitpay.css" id="theme">
-
+    <link href="http://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Playball' rel='stylesheet' type='text/css'>
     <!-- Code syntax highlighting -->
     <link rel="stylesheet" href="lib/css/zenburn.css">
+    
+        
+    <style type="text/css">
+      .reveal section img.partner-logo {
+        background: none;
+        border: 0;
+        box-shadow: none;
+      }
+      .reveal section img.clean {
+         box-shadow: none;
+         border: 0;
+         background: none;
+      }
+      
+      .reveal section.cursive {
+        font-family: 'Playball', cursive;
+      }
+      
+    </style>
 
     <!-- Printing and PDF exports -->
     <script>
@@ -41,35 +61,452 @@
       <!-- Any section element inside of this container is displayed as a slide -->
       <div class="slides">
         <section>
-          <center><img src="http://bitcore.io/css/images/lava-ball.png" style="margin:0;background:none;border:0;box-shadow:none;" /></center>
-          <h1>Bitcore</h1>
-          <center><h2 style="max-width: 90%;">My Awesome Tagline</h2></center>
+          <center><img src="img/bitcoin.svg" style="height: 7.5em;margin:0;background:none;border:0;box-shadow:none;" /></center>
+          <h1>Open Source: Beyond Bitcoin</h1>
+          <center><h2 style="max-width: 90%;">How Bitcoin Changes Everything</h2></center>
+          
           <br>
-          <h2><code>bitcore.io</code></h2>
-          <h5>trustless by design.</h5>
           <br>
+          
+          <h4>Eric Martindale</h4>
           <p>
-            <small><a href="https://github.com/martindale">@myHandle</a> &bull; Blockchain University &bull; February 21st, 2015</small>
+            <small><a href="https://github.com/martindale">@martindale</a> &bull; MIT Bitcoin Expo &bull; March 8th, 2015</small>
           </p>
+        </section>
+        
+        <section>
+          <img class="clean" src="img/bitpay.png" style="height: 5em;" />
+        
+          <section>
+            <div style="font-size: 2em; line-height: 3em;">
+              <p class="fragment">Founded: May, 2011</p>
+              <p class="fragment">Bitcoin price: $1</p>
+              <p class="fragment">Merchants: 2</p>
+            </div>
+          </section>
+          
+          <section>
+            <div style="font-size: 2em; line-height: 3em;">
+              <p class="fragment">Today: March, 2015</p>
+              <p class="fragment">Bitcoin price: $281</p>
+              <p class="fragment">Merchants: 60,000+</p>
+            </div>
+          </section>
+        
+          <section>
+            <h3>Our Customers Include...</h3>
+            <ul style="font-size: 1.25em;">
+              <li class="fragment">Microsoft</li>
+              <li class="fragment">AdYen</li>
+              <li class="fragment">Gyft</li>
+            </ul>
+            <p class="fragment"><img src="http://store.thecoop.com/coopstore/images/sitewide_logo.gif" /></p>
+            
+          </section>
+        
         </section>
 
         <section>
-          <h2>Some Basics</h2>
+          <h3>Over 100,000 businesses now accept Bitcoin.</h3>
+          <h3 class="fragment">Growing around <span style="font-size: 1.2em;">1,000</span> per week.</h3>
+          <br /><br />
+          <h2 class="fragment">What's next?</h2>
+        </section>
+        
+        <section>
+          <div class="bigtext" style="width: 14em; line-height: 4em; margin-left: auto; margin-right: auto;">
+            <div style="font-size: 1.9em;">DECENTRALIZE</div>
+            <div style="font-size: 7.5em;">ALL</div>
+            <div style="font-size: 2.2em;">THE THINGS!</div>
+          </div>
+        </section>
+
+        <section>
+          <h1>Open Source</h1>
+          <h2>started here at MIT!</h2>
+          
+          <section></section>
+          
+          <section data-background="img/richard-stallman.jpg">
+            <h3 style="padding-top: 16em;">Richard Stallman</h3>
+            <h4>Free Software Foundation</h4>
+          </section>
+          
+          <section data-background="img/ken-thompson-and-dennis-ritchie.jpg">
+            <h3 style="padding-top: 16em;">Ken Thompson and Dennis Ritchie</h3>
+            <h4>Creators of Unix</h4>
+          </section>
+          
           <section>
-            <ul>
-              <li>JavaScript, for the most accessibility.</li>
-              <li>Isomorphic; runs on both the server and the client, with the same code.</li>
-              <li>97% test coverage</li>
-              <li>Passes all of Bitcoin Core's Tests</li>
+            <blockquote>Given enough eyeballs, all bugs are shallow.<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<small>– Eric Raymond, "Linus' Law"</small></blockquote>
+          
+            <h3 class="fragment">Open source systems are a requirement.</h3>
+            
+            <h4 class="fragment"><br/>What Is Open Source & Why Do I Feel So Guilty?<br /><br /><code>goo.gl/ur5ldW</code></h4>
+          
+          </section>
+          
+        </section>
+
+        <section data-background="#3a3a3a">
+          <center style="margin-top: 2.5em;">
+            <img class="clean" style="display: block; height: 5em;" src="http://bitcore.io/css/images/lava-ball.png" />
+            <img class="clean" src="http://bitcore.io/css/images/logo-invert.png" />
+          </center>
+          
+          <section></section>
+          
+          <section>
+            <ul style="margin-top: 4em;">
+              <p>Built for BitPay's needs:</p>
+              <h3>Secure, modular, and extensible</h3>
             </ul>
           </section>
+          
+          <section>
+            <h3 style="margin-top: 6em;">Abstract classes for taking Bitcoin beyond currency</h3>
+            <p>
+              <code class="fragment">PublicKey</code>
+              <code class="fragment">, PrivateKey</code>
+              <code class="fragment">, Script</code>
+              <code class="fragment">, Peer</code>
+              <code class="fragment">, ...</code>
+            </p>
+            
+            <div class="fragment">
+              <p>and much more:</p>
+              <h2>bitcore.io/docs</h2>
+            </div>
+          </section>
+        </section>
+        
+        <section>
+          <h2>Networking</h2>
+          
+          <section>
+            <h1>Foxtrot<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<small style="font-size: 0.5em;">by <em>bitpay</em></small></h1>
+            <h2 class="fragment">secure routing network</h2>
+            <h3 class="fragment">same cryptography as Bitcoin (ecdsa, secp256k1)</h3>
+            <h3 class="fragment" style="margin-top: 1em;">Public keys, not IP addresses!</h3>
+            <h3 style="margin-top: 2em;"><code>github.com/bitpay/foxtrot</code></h3>
+          </section>
+          
+          <section>
+            <pre><code data-trim style="font-size: 1.4em; line-height: 1.2em;">
+var Foxtrot = require('foxtrot');
+var foxtrot = new Foxtrot({
+  discovery: {
+    tcpserver: 'bootstrap.localhost.localdomain'
+  }
+});
+
+foxtrot.on('peerConnect',    logPeerConnection );
+foxtrot.on('peerDisconnect', logPeerDisconnection );
+
+var client = foxtrot.connect({
+  address: '404371705fa9bd789a2fcd52d2c580b65d35549d'
+}, function() {
+  // hey!  we're connected.  let's say hello.
+  client.write('hello, network!');
+});
+
+client.on('data', function(data) {
+  console.log('data received: ', data.content );
+});
+            </code></pre>
+          </section>
+          
+          <section data-background="img/mesh-network-africa.png">
+            &nbsp;
+          </section>
+          
+          <section>
+          
+            <h2>Building a Rural Wireless Mesh Network</h2>
+            <h3>A do-it-yourself guide to planning and building a Freifunk-based mesh network</h3>
+              
+            <h3 style="margin-top: 2em;"><code>wirelessafrica.meraka.org.za</code></h3>
+          
+          </section>
+          
+          <section>
+            <h2>Mesh Networks</h2>
+            <h3 class="fragment">...become <em>really</em> interesting when<br /> combined with Payment Channels.</h3>
+          </section>
+          
+          <section>
+            <h3>some other projects</h3>
+            <table>
+              <tr>
+                <td>CJDNS<br /><small>or "Hyperboria"</small></td>
+                <td><code>projectmeshnet.org</code></td>
+              </tr>
+              <tr>
+                <td>FreeNet</td>
+                <td><code>freenetproject.org</code></td>
+              </tr>
+              </tr>
+              <tr>
+                <td>MaidSafe</td>
+                <td><code>maidsafe.net</code></td>
+              </tr>
+            </table>
+          </section>
+          
+          <section>
+            <h2>disintermediate the ISPs</h2>
+          </section>
+        </section>
+        
+        <section>
+          <h2>Databases</h2>
+          
+          <section></section>
+          
+          <section>
+            <h1>ChainDB<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<small style="font-size: 0.5em;">by <em>bitpay</em></small></h1>
+            <h2 class="fragment">blockchain database framework</h2>
+            <h3 class="fragment">define your own, <em>custom</em> transaction rules</h3>
+            <h3 class="fragment" style="margin-top: 1em;">Secured by the Bitcoin Blockchain.</h3>
+            
+            <h3 style="margin-top: 2em;"><code><!-- github.com/bitpay/chaindb --></code></h3>
+          </section>
+          
+          <section>
+            <h3>What is a blockchain?</h3>
+            
+            <ul>
+              <li class="fragment">Distributed system</li>
+              <li class="fragment">Tamper-resistant history</li>
+              <li class="fragment">Rewind, Replay, Resume</li>
+              <li class="fragment">Data Consistency</li>
+            </ul>
+          </section>
+          
+          <section>
+            <pre><code data-trim style="font-size: 1.4em; line-height: 1.2em;">
+var ChainDB = require('chaindb');
+var chaindb = new ChainDB({
+  consensus: {
+    type: 'pof', // proof of fee
+    xprivkey: 'someprivkey', // bitcoin HD private key with funds
+  },
+  db: {
+    type: 'script', // script based transactions based on bitcoin
+    path: './pof-script.db' // actual on-disk datastore
+  }
+});
+
+var address = chaindb.genesis.getCoinbaseAddress();
+var destination = 'some receiving address';
+
+chaindb.on('ready', function() {
+  chaindb.sendFunds( destination , 1000000 , function(err, transaction) {
+    ...
+  });
+});
+
+chaindb.initialize();
+            </code></pre>
+          </section>
+          
+          <section>
+            <h3>Proof of Fee</h3>
+            <h4 class="fragment">resolve chain conflicts not based on block height,</h4>
+            <h4 class="fragment">but based on the Bitcoin spent for the entire chain,</h4>
+            <h4 class="fragment">weighted towards older blocks.</h4>
+          </section>
+
+          <section>
+            <h3>Applications (Short Term)</h3>
+            <ul>
+              <li class="fragment">
+                Key-value stores
+                <ul>
+                  <li class="fragment">Proof of Existence</li>
+                  <li class="fragment">DNS for Public Key Hashes</li>
+                  <li class="fragment">DNS for, well, DNS</li>
+                </ul>
+              </li>
+              <li class="fragment">
+                Document stores
+                <ul>
+                  <li class="fragment">Tamper-proofing existing databases</li>
+                  <li class="fragment">Atomic snapshots</li>
+                  <li class="fragment">Verifiable state history</li>
+                </ul>
+              </li>
+            </ul>
+          </section>
+          
+          <section>
+            <h3>Applications (Long Term)</h3>
+            <ul>
+              <li class="fragment">Replace the SSL/TLS PKI (eliminate CAs)</li>
+              <li class="fragment">Identity Assertion</li>
+              <li class="fragment">
+                Proof of Ownership
+                <ul>
+                  <li class="fragment">Deeds</li>
+                  <li class="fragment">Titles</li>
+                  <li class="fragment">Equity</li>
+                </ul>
+              </li>
+              <li class="fragment">Smart Contracts</li>
+            </ul>
+          </section>
+          
+          <section>
+            <h3>Challenges</h3>
+            <ol>
+              <li class="fragment">Blockchain Bloat</li>
+              <li class="fragment">High-volume changes are difficult!</li>
+            </ol>
+            
+            <div class="fragment" style="margin-top: 2em;">
+              <h4>Sidechains offer a solution to these problems,</h4>
+              <h4>but it is very important to be secured by the </h4>
+              <h4>strongest chain.  Today, that is Bitcoin.</h4>
+            </div>
+          </section>
+          
+          <section>
+            <h3>Other Projects</h3>
+          
+            <table>
+              <tr>
+                <td><h4>Namecoin</h4></td>
+                <td><code>namecoin.org</code></td>
+              </tr>
+              <tr>
+                <td><h4>DNSChain</h4></td>
+                <td><code>github.com/okTurtles/dnschain</code></td>
+              </tr>
+              <tr>
+                <td><h4>Blockstore</h4></td>
+                <td><code>github.com/openname/blockstore</code></td>
+              </tr>
+              <tr>
+                <td><h4>DEJE</h4></td>
+                <td><code>github.com/DJDNS/go-deje</code></td>
+              </tr>
+              <tr>
+                <td><h4>MaidSafe</h4></td>
+                <td><code>maidsafe.net</code></td>
+              </tr>
+            </table>
+          </section>
+          
+        </section>
+        
+        <section>
+          <h2>Storage</h2>
+          <p>Not quite a database, but data housing nonetheless.</p>
+          
+          <section>
+            <table>
+              <tr>
+                <td><h4>Storj</h4></td>
+                <td><code>storj.io</code></td>
+              </tr>
+              <tr>
+                <td><h4>IPFS</h4></td>
+                <td><code>ipfs.io</code></td>
+              </tr>
+              <tr>
+                <td><h4>MaidSafe</h4></td>
+                <td><code>maidsafe.net</code></td>
+              </tr>
+            </table>
+          </section>
+          
+        </section>
+        
+        <section>
+          <h2>Compute</h2>
+          
+          <section></section>
+          
+          <section>
+            <h3>Smart Contracts</h3>
+            <h4 class="fragment">"Bitcoin 2.0"</h4>
+          </section>
+          
+          <section>
+            <h3>Prediction Markets</h3>
+            <h4 class="fragment">Augur&nbsp;&nbsp;&nbsp;&nbsp;<code>augur.net</code></h4>
+          </section>
+          
+          <section>
+            <h3>Decentralized Exchanges</h3>
+            <h4 class="fragment">Double-deposit smart contracts</h4>
+            <h4 class="fragment">Elimination of clearing houses</h4>
+            <br /><br />
+            <h4 class="fragment">Coinffeine&nbsp;&nbsp;&nbsp;&nbsp;<code>coinffeine.com</code></h4>
+          </section>
+
+          <section>
+            <h3>Challenges</h3>
+
+            <ul>
+              <li class="fragment">trusted oracles</li>
+              <li class="fragment">performance</li>
+              <li class="fragment">legal cruft</li>
+            </ul>
+          </section>
+          
+          <section>
+            <h3>Projects</h3>
+            <table>
+              <tr>
+                <td><h4>Codius</h4></td>
+                <td><code>codius.org</code></td>
+              </tr>
+              <tr>
+                <td><h4>Ethereum</h4></td>
+                <td><code>ethereum.org</code></td>
+              </tr>
+            </table>
+          </section>
+        </section>
+        
+        <section class="cursive" data-background="#29bb9c" style="color: white;">
+          <img class="clean" style="height: 5em; background: none; margin-top: 2em;" src="img/copay-logo.svg" />
+          
+          <section>
+            <p>
+              <ul style="padding-top: 4em;">
+                <p class="fragment" style="font-size: 2em;">The "Wallet for Everyone."</p>
+                <p class="fragment" style="font-size: 2em;">Easy to manage, securely.</p>
+              </ul>
+              
+              <h3 class="fragment" style="color: white; padding-top: 2em;">copay.io</h3>
+            </p>
+          </section>
+          
+          <section>
+            <img class="clean" style="height: 12em; margin-top: 5em; background: none;" src="https://copay.io/img/main-anim.png" />
+          </section>
+          
+          <section>
+            <code>3DvQ1he4zipe6oJhyUZQqfSmAtJcCRUJN4</code>
+            <!-- <iframe class="stretch" src="https://copay.io/in/app"></iframe> -->
+          </section>
+          
+          <section>
+            <h3 style="color:white; margin-top: 2em;">github.com/bitpay/...</h3>
+            <p class="fragment"><code>bitcore-wallet</code></p>
+            <p class="fragment"><code>bitcore-wallet-service</code></p>
+            <p class="fragment"><code>bitcore-wallet-client</code></p>
+          </section>
+
         </section>
 
         <section>
           <h2>Discussion & Questions</h2>
           
-          <p>me@bitpay.com</p>
-          <p>@myTwitter</p>
+          <p>eric@bitpay.com</p>
+          <p>@martindale</p>
         </section>
 
       </div>
@@ -77,9 +514,15 @@
     </div>
 
     <script src="lib/js/head.min.js"></script>
+    <script src="js/jquery-2.1.3.min.js"></script>
+    <script src="js/bigtext.js"></script>
     <script src="js/reveal.js"></script>
 
     <script>
+
+      /* Reveal.addEventListener('ready', function() {
+        $('.bigtext').bigtext();
+      }); */
 
       // Full list of configuration options available at:
       // https://github.com/hakimel/reveal.js#configuration
@@ -87,7 +530,7 @@
         controls: true,
         progress: true,
         history: true,
-        center: true,
+        //center: true,
     
         margin: 0,
     
